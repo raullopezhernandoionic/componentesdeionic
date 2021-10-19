@@ -1,0 +1,33 @@
+<app-header titulo = "Grid"></app-header>
+
+<ion-content>
+
+
+  //Si le metemos a el ion-grid un fixed nos estblecera unos margenes que se adaptaran a el tamaño para que el contenido
+  //quede centrado
+  <ion-grid >
+    <ion-row>
+
+      //Empezamos con un size de 12 por defecto para pantalla pequeña para luego especificar pantalla grande, mediana y mediana
+      // Ya que el ancho de la pantalla esta definido a 12 en la primera opcion veremos una imagen en la segunda 4 en la tercera 3 y en la ultima 2
+      
+      <ion-col size="12" size-lg="3" size-md ="4" size-sm="6"
+      
+      *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+        <ion-card>
+          <ion-img src="/assets/stan-lee.jpg"></ion-img>
+        </ion-card>
+
+        <ion-card-header>
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+          <ion-card-title>Awesome Title</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam numquam voluptate excepturi minima nihil natus libero consequuntur repellendus itaque aliquid et voluptas deserunt a id ullam debitis, eligendi odio voluptatum.
+        </ion-card-content>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

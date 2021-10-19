@@ -37,7 +37,19 @@ const routes: Routes = [
   {
     path: 'checkbox',
     loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },  {
+    path: 'date-time',
+    loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
   },
+  {
+    path: 'ion-fab',
+    loadChildren: () => import('./pages/ion-fab/ion-fab.module').then( m => m.IonFabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+
 ];
 
 @NgModule({
