@@ -37,7 +37,8 @@ const routes: Routes = [
   {
     path: 'checkbox',
     loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
-  },  {
+  },
+  {
     path: 'date-time',
     loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
   },
@@ -57,6 +58,10 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  }
 
 ];
 
