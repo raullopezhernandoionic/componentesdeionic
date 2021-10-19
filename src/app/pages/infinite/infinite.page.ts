@@ -22,12 +22,12 @@ export class InfinitePage implements OnInit {
     //console.log(event);
 
     setTimeout(() => {
-      
-    if (this.data.length > 50) {
-      this.infiniteScroll.complete;
-      this.infiniteScroll.disabled = true;
-      return;
-    }
+
+      if (this.data.length > 50) {
+        this.infiniteScroll.complete;
+        this.infiniteScroll.disabled = true;
+        return;
+      }
       const newArray = Array(20);
       //Sumamos varios arrays con el operador express
       this.data.push(...newArray);
